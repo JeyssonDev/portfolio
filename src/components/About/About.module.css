@@ -1,0 +1,167 @@
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url('../../assets/DSC_0010\ -\ copia.JPG');
+  background-size: cover;
+  margin: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 1s;
+}
+
+.description h2 {
+  color: rgb(242, 245, 247);
+}
+
+.description h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.description p {
+  color: rgb(242, 245, 247);
+}
+
+.hero-icons {
+  margin-top: 2%;
+}
+
+.hero-icons svg {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  margin-right: 3%;
+}
+
+.photo:hover {
+  transform: scale(1.1);
+  filter: grayscale(25%);
+  -webkit-filter: grayscale(25%);
+  transition: 0.5s;
+}
+
+/* Tiny devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .about {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .photo {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    text-align: left;
+    font-size: 200%;
+    line-height: 1.7cm;
+  }
+
+  .description h2 {
+    text-align: center;
+  }
+
+  .description h4 {
+    text-align: left;
+  }
+
+  .hero-icons {
+    margin-top: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-icons svg {
+    margin-right: 5%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .about {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .photo {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    text-align: justify;
+    font-size: 200%;
+    line-height: 1.7cm;
+  }
+
+  .description h2 {
+    text-align: center;
+  }
+
+  .description h4 {
+    text-align: left;
+  }
+
+  .hero-icons {
+    margin-top: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-icons svg {
+    margin-right: 5%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .hero-icons {
+    margin-top: 15px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .hero-icons svg {
+    margin-right: 8%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .about {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  .description {
+    text-align: left;
+    font-size: 200%;
+  }
+
+  .description h2 {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .description h4 {
+    margin-bottom: 15px;
+  }
+
+  .photo {
+    margin: auto;
+  }
+
+  .hero-icons {
+    text-align: left;
+  }
+}

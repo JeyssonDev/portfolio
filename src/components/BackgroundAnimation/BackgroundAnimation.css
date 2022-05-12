@@ -1,0 +1,12 @@
+.BgAnimation__svg {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 641px) {
+  .BgAnimation__svg {
+    display: none;
+  }
+}

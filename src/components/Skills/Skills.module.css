@@ -1,0 +1,70 @@
+.hero {
+  width: 90%;
+  margin: 2rem auto;
+  justify-content: center;
+}
+
+.hero h2 {
+  text-align: center;
+  color: #f2f5f7;
+}
+
+.tech {
+  margin: 1.5em auto 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tech-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.tech-card img {
+  box-shadow: none;
+}
+
+.tech-card h4 {
+  margin-top: 10px;
+}
+
+/* Tiny devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Large devices (tablets, 992px and up) */
+@media screen and (min-width: 992px) {
+  .tech {
+    margin: 1.5em auto 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
